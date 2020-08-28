@@ -84,8 +84,8 @@ Add `PackageProviders().Append(winrt::ReactNativePicker::ReactPackageProvider())
   - Add `new RNCPickerPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ': @react-native-community/picker'
-  	project(': @react-native-community/picker').projectDir = new File(rootProject.projectDir, 	'../node_modules/@react-native-community/picker/android')
+  	include ': @react-native-community_picker'
+  	project(': @react-native-community_picker').projectDir = new File(rootProject.projectDir, 	'../node_modules/@react-native-community/picker/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
